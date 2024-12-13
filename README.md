@@ -1,4 +1,4 @@
-# 🏠Githup-Mini-Clone-Website
+# 🏠Github-Mini-Clone-Website
 
 In this repo, a mini clone of Github's user profile page was designed using Html, Css, SCSS and SASS.
 
