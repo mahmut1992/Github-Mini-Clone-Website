@@ -1,11 +1,14 @@
+@import "./section";
 .main {
   width: 100%;
 
   display: flex;
+
   padding-left: 10px;
 
   &-about {
     margin-top: 20px;
+    height: 400px;
     img {
       width: 240px;
       height: 240px;
@@ -36,30 +39,35 @@
   &-projects {
     width: 100%;
     margin-left: 40px;
+    height: 100%;
 
     &-link {
       display: flex;
-      justify-content: space-between;
+      width: 100%;
       align-items: center;
       padding: 40px;
       a {
         color: #586069;
+        margin-left: 30px;
       }
     }
     .section {
       margin-top: 30px;
       display: flex;
       justify-content: space-between;
-      padding: 0 40px 0 40px;
+      padding-inline: 40px 40px;
       align-items: center;
+      width: 100%;
       a {
         font-size: 12px;
         color: #586069;
       }
     }
     .container {
-      display: flex;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      padding-inline: 20px;
+
       gap: 10px;
     }
     &-bar {
@@ -97,5 +105,71 @@
         }
       }
     }
+  }
+}
+@media (max-width: 1000px) {
+  .main-projects-link {
+    display: none;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    width: 100%;
+  }
+  .main-projects {
+    width: 50%;
+  }
+  .container {
+    width: 70%;
+  }
+  .main-projects-bar {
+    width: 70% !important;
+  }
+  .section a {
+    display: none;
+  }
+}
+@media (max-width: 1139px) {
+  .main-projects-bar {
+    width: 100%;
+  }
+}
+@media (max-width: 1549px) {
+  .section {
+    width: 83% !important;
+  }
+}
+
+@media (max-width: 793px) {
+  .header-links {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .main-projects {
+    width: 30%;
+  }
+  .container {
+    width: 70%;
+  }
+  .main-projects-bar {
+    width: 50% !important;
+  }
+  .main {
+    width: 100%;
+  }
+  .mains {
+    padding: unset !important;
+  }
+  .mains-section {
+    width: 100%;
+  }
+}
+@media (max-width: 500px) {
+  .main-projects-bar {
+    width: 40% !important;
+  }
+  .mains-section-middle {
+    margin-right: 100px !important;
   }
 }

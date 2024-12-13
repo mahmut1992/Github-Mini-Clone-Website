@@ -1,9 +1,9 @@
 .mains {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
-  width: 800px;
-  margin-left: 290px;
+
+  padding-inline: 30px;
 
   &-container {
     width: 100%;
@@ -24,6 +24,7 @@
     display: flex;
     border: 1px solid gray;
     padding-block: 20px 10px;
+
     &-left {
       display: flex;
       flex-direction: column;
@@ -49,6 +50,7 @@
 .middle-box {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
 
   &-boxes {
     width: 10px;
@@ -116,8 +118,13 @@
   margin-left: 3px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .mains-years {
     display: none;
+  }
+}
+@media (max-width: 1000px) {
+  .mains {
+    width: 100%;
   }
 }
