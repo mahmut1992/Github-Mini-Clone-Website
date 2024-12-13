@@ -1,0 +1,123 @@
+.mains {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  margin-left: 290px;
+
+  &-container {
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+  }
+  &-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 0 20px;
+    margin-bottom: 10px;
+    h6 {
+      font-size: 12px;
+    }
+  }
+  &-section {
+    display: flex;
+    border: 1px solid gray;
+    padding-block: 20px 10px;
+    &-left {
+      display: flex;
+      flex-direction: column;
+      margin-top: 40px;
+      gap: 7px;
+      padding-inline-start: 20px;
+    }
+    &-middle {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      padding: 0 20px 0 20px;
+    }
+  }
+}
+
+.middle-months {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2px 9px;
+}
+.middle-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  &-boxes {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    margin-left: 3px;
+    margin-top: 3px;
+  }
+}
+.middle-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  &-right {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+  }
+}
+
+.mains-years {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 10px 0 10px;
+
+  .active {
+    border: 1px solid transparent;
+    background: rgb(16, 148, 201);
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+  span {
+    padding: 10px;
+    margin-top: 15px;
+  }
+}
+.middle-box-boxess {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(84, 100, 82);
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.middle-box-boxess1 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(111, 151, 106);
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.middle-box-boxess2 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(114, 192, 103);
+  margin-top: 3px;
+  margin-left: 3px;
+}
+.middle-box-boxess3 {
+  width: 10px;
+  height: 10px;
+  background-color: rgb(153, 243, 145);
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+@media (max-width: 600px) {
+  .mains-years {
+    display: none;
+  }
+}
