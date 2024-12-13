@@ -22,7 +22,8 @@ In this repo, a mini clone of Github's user profile page was designed using Html
 
 # Screenshot
 
-![Githup-Clone](https://github.com/user-attachments/assets/4191edd6-25fb-49c4-b6f0-08365e404551)
+![GithubClone](https://github.com/user-attachments/assets/6062402d-63df-457d-9a63-172a562b1c2f)
+
 
 # 📨Contact
 
