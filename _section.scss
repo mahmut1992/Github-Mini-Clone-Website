@@ -1,6 +1,6 @@
 .mains {
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   margin-left: 100px;
@@ -24,7 +24,6 @@
     display: flex;
     border: 1px solid gray;
     padding-block: 20px 10px;
-
     &-left {
       display: flex;
       flex-direction: column;
@@ -50,7 +49,6 @@
 .middle-box {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 
   &-boxes {
     width: 10px;

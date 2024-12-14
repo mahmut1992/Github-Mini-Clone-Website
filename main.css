@@ -397,7 +397,6 @@ template {
   display: flex;
   align-items: center;
   padding: 10px;
-  width: 100%;
 }
 .header-logo {
   margin-right: 16px;
@@ -442,190 +441,6 @@ template {
   margin-left: 10px;
 }
 
-.mains {
-  display: flex;
-  align-items: center;
-  width: 90%;
-  margin-left: 100px;
-}
-.mains-container {
-  width: 100%;
-  height: 300px;
-  margin-top: 80px;
-}
-.mains-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px 0 20px;
-  margin-bottom: 10px;
-}
-.mains-title h6 {
-  font-size: 12px;
-}
-.mains-section {
-  display: flex;
-  border: 1px solid gray;
-  padding-block: 20px 10px;
-}
-.mains-section-left {
-  display: flex;
-  flex-direction: column;
-  margin-top: 40px;
-  gap: 7px;
-  padding-inline-start: 20px;
-}
-.mains-section-middle {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 0 20px 0 20px;
-}
-
-.middle-months {
-  display: flex;
-  justify-content: space-between;
-  padding-inline: 2px 9px;
-}
-
-.middle-box {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-.middle-box-boxes {
-  width: 10px;
-  height: 10px;
-  background: gray;
-  margin-left: 3px;
-  margin-top: 3px;
-}
-
-.middle-bottom {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.middle-bottom-right {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-}
-
-.mains-years {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 10px 0 10px;
-}
-.mains-years .active {
-  border: 1px solid transparent;
-  background: rgb(16, 148, 201);
-  padding: 10px;
-  margin-top: 15px;
-  border-radius: 10px;
-}
-.mains-years span {
-  padding: 10px;
-  margin-top: 15px;
-}
-
-.middle-box-boxess {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(84, 100, 82);
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
-.middle-box-boxess1 {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(111, 151, 106);
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
-.middle-box-boxess2 {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(114, 192, 103);
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
-.middle-box-boxess3 {
-  width: 10px;
-  height: 10px;
-  background-color: rgb(153, 243, 145);
-  margin-top: 3px;
-  margin-left: 3px;
-}
-
-@media (max-width: 1100px) {
-  .mains {
-    margin-left: unset;
-    width: 100%;
-    padding-inline: 20px 20px;
-  }
-  .main-projects-bar {
-    width: 49%;
-  }
-  .container {
-    padding-right: 20px;
-  }
-}
-@media (max-width: 875px) {
-  .main-projects-link {
-    display: none;
-  }
-}
-@media (max-width: 793px) {
-  .header-links {
-    display: none;
-  }
-}
-@media (max-width: 788px) {
-  .main-projects-bar {
-    width: 48%;
-  }
-  .main-about {
-    width: 300px;
-    height: 300px !important;
-  }
-  .main-about img {
-    width: 100%;
-  }
-}
-@media (max-width: 600px) {
-  .mains-years {
-    display: none;
-  }
-  .main-projects-bar {
-    width: 100%;
-  }
-}
-@media (max-width: 650px) {
-  .main-projects-bar {
-    width: 100%;
-  }
-}
-@media (max-width: 650px) {
-  .section a {
-    display: none;
-  }
-}
-@media (max-width: 482px) {
-  .header-rightlinks {
-    display: none;
-  }
-  .mains-title h6 {
-    display: none;
-  }
-  .mains-section-left {
-    margin-top: 100px;
-  }
-}
 .main {
   width: 100%;
   display: flex;
@@ -633,7 +448,6 @@ template {
 }
 .main-about {
   margin-top: 20px;
-  height: 400px;
 }
 .main-about img {
   width: 240px;
@@ -664,34 +478,30 @@ template {
 .main-projects {
   width: 100%;
   margin-left: 40px;
-  height: 100%;
 }
 .main-projects-link {
   display: flex;
-  width: 100%;
+  justify-content: space-between;
   align-items: center;
   padding: 40px;
 }
 .main-projects-link a {
   color: #586069;
-  margin-left: 30px;
 }
 .main-projects .section {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
-  padding-inline: 40px 40px;
+  padding: 0 40px 0 40px;
   align-items: center;
-  width: 100%;
 }
 .main-projects .section a {
   font-size: 12px;
   color: #586069;
 }
 .main-projects .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  padding-inline: 20px;
+  display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 .main-projects-bar {
@@ -728,73 +538,9 @@ template {
   margin-right: 5px;
 }
 
-@media (max-width: 1000px) {
-  .main-projects-link {
-    display: none;
-  }
-}
-@media (max-width: 760px) {
-  .header {
-    width: 100%;
-  }
-  .main-projects {
-    width: 50%;
-  }
-  .container {
-    width: 70%;
-  }
-  .main-projects-bar {
-    width: 70% !important;
-  }
-  .section a {
-    display: none;
-  }
-}
-@media (max-width: 1139px) {
-  .main-projects-bar {
-    width: 100%;
-  }
-}
-@media (max-width: 1549px) {
-  .section {
-    width: 83% !important;
-  }
-}
-@media (max-width: 793px) {
-  .header-links {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .main-projects {
-    width: 30%;
-  }
-  .container {
-    width: 70%;
-  }
-  .main-projects-bar {
-    width: 50% !important;
-  }
-  .main {
-    width: 100%;
-  }
-  .mains {
-    padding: unset !important;
-  }
-  .mains-section {
-    width: 100%;
-  }
-}
-@media (max-width: 500px) {
-  .main-projects-bar {
-    width: 40% !important;
-  }
-  .mains-section-middle {
-    margin-right: 100px !important;
-  }
-}
 .mains {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   width: 90%;
   margin-left: 100px;
@@ -842,7 +588,6 @@ template {
 .middle-box {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
 }
 .middle-box-boxes {
   width: 10px;
